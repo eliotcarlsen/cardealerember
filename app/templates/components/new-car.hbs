@@ -1,0 +1,15 @@
+{{#if addNewCar}}
+  <form>
+    <label for="name">Enter mame:</label>
+    {{input value=name id="name"}}
+    <label for="model">Enter model:</label>
+    {{input value=model id="model"}}
+    <label for="color">Enter color:</label>
+    {{input value=color id="color"}}
+    <label for="price">Enter price:</label>
+    {{input value=price id="price"}}
+    <button {{action 'saveCar'}}>save</button>
+  </form>
+{{else}}
+    <button class="btn bg-info" {{action 'showForm'}}>New Car</button>
+{{/if}}

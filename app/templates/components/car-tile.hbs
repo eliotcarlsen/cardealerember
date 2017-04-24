@@ -1,0 +1,9 @@
+<li>
+  <ul>
+    <li>Name: {{#link-to 'car' car.id}}{{car.Name}}{{/link-to}}</li>
+    <li>Model: {{car.Model}}</li>
+    <li>Color: {{car.Color}}</li>
+    <li>Price: {{car.Price}}</li>
+  </ul>
+  <button class="btn bg-danger" {{action 'delete' car}}>Remove</button>
+</li>

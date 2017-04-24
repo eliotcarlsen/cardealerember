@@ -1,0 +1,6 @@
+{{#each model as |car|}}
+  <ul>
+    {{car-tile car=car destroyCar="destroyCar"}}
+  </ul>
+{{/each}}
+{{new-car saveCar="saveCar"}}
